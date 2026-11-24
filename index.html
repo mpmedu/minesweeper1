@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="rules">
+    <div class="rulesHeading">Rules</div>
+    <div class="rulesBody">
+      <p>
+        1. The minefield is a grid of 100 squares. There are landmines on 20 of the squares. To win you must defuse all
+        the
+        mines. If you step on a mine, ie left-click on a square with a mine, then the game is over. To defuse the mines
+        you
+        must right-click on the squares where the mines are. You are shielded when right-clicking but you are only
+        given
+        5 chances to right-click.
+      </p>
+      <p>
+        2. If you right-click on a mine then the mine is defused and you don't lose a chance - you only lose a chance
+        when right-clicking on a square that does not contain a mine.
+      </p>
+      <p>
+        3.If you left-click on a square not containing a mine then that square is marked as checked/cleared. If the
+        square is
+        next to one or more mines then the number of mines that surround that
+        square is displayed in the square. If you left-click on a square which is not next to a mine, ie an empty
+        square, then its
+        surrounding squares are checked - this is a recursive procedure meaning that whenever an empty square is found
+        its surrounding squares
+        will also be checked.
+      </p>
+      <p>
+      </p>
+    </div>
+  </div>
+  <div class="gridAndResults">
+    <div class="grid"></div>
+    <div class="results">
+      <div class="result1"></div>
+      <div class="result2"></div>
+    </div>
+  </div>
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>
